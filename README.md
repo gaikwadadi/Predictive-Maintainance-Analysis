@@ -32,12 +32,17 @@
 
 ## 1.No Null values 
 
-## 2.EDA Performed
-## 3.Correlation 
-## 4.Encoding
-## 5.Features and Target
-## 6.Train Test Split
-## 7.Model Imported 
+## 2. EDA Performed
+
+## 3. Correlation 
+
+## 4. Encoding
+
+## 5. Features and Target
+
+## 6. Train Test Split
+
+## 7. Model Imported 
 
 # Used Model 
 1 - Logistic Regression

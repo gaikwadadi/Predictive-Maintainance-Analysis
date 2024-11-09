@@ -49,12 +49,12 @@
 2 - KNeighbors Classifier 
 3 - DecisionTree Classifier
 
-# Model Deployment
-# Model Accuracy 
-# Train Test score 
-# Hyperparameter Tunning
-# Final Model 
-# Model Testing
+## 8. Model Deployment
+## 9. Model Accuracy 
+## 10. Train Test score 
+## 11. Hyperparameter Tunning
+## 12. Final Model 
+## 13. Model Testing
 
 # Prescriptive Analysis
    After studying the dataset, we can see that machine failure is mainly occuring because of 3 reasons:

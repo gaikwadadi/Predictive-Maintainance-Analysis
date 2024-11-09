@@ -30,13 +30,14 @@
 - matplotlib
 - seaboran
 
-# No Null values 
-# EDA Performd
-# Correlation 
-# Encoding
-# Features and Target
-# Train Test Split
-# Model Imported 
+## 1.No Null values 
+
+## 2.EDA Performed
+## 3.Correlation 
+## 4.Encoding
+## 5.Features and Target
+## 6.Train Test Split
+## 7.Model Imported 
 
 # Used Model 
 1 - Logistic Regression

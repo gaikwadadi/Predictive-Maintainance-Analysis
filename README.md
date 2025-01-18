@@ -11,11 +11,9 @@
 - By using this model we can improve the productivity of companies.
 - We can easily predict  machine will fail or not before start the production by providing input parameters.
 - Prevent the machine from failures.
-- Improves the safety features from accidents.
-  
+- Improves the safety features from accidents.  
 - Language used (PYTHON, EXCEL)
-- Accuracy of the project – 99 %
-
+  
 # Input Columns
 
 1. Air temperature in Kelvin (K)

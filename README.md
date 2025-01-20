@@ -1,12 +1,12 @@
-### Title - Predictive Maintainance Analysis
+## Title - Predictive Maintainance Analysis
 
-# Discription of Project
+### Discription of Project
 
 - This project is related to a mechanical industry, Sometimes in industries unexpected machine failures occurs due to    improper handling, power cutoff, faulty     instrument, improper machine parameters given by operator. 
 - By analysing and finding insights from the Dataset of drilling tool which is used on lathe machine in mechanical 
   industry we created a model using a machine learning algorithm which predict if machine will get failure or not.
 
-# Future scope This Project 
+### Future scope This Project 
 
 - By using this model we can improve the productivity of companies.
 - We can easily predict  machine will fail or not before start the production by providing input parameters.
@@ -14,7 +14,7 @@
 - Improves the safety features from accidents.  
 - Language used (PYTHON, EXCEL)
 
-# Data Information
+### Data Information
 - After looking at the dataset, we can assume that the data is about the drilling tool used in a lathe machine.
 
 - The columns consist values of:
@@ -35,7 +35,7 @@
 
  - An additional column of Failure Type is given so that we can understand what type of failure is occuring.
    
-# Input Columns and Output column
+### Input Columns and Output column
 
 1. Air temperature in Kelvin (K)
 2. Process temperature in Kelvin (K)
@@ -46,7 +46,7 @@
 7. Failure Type
 8. Target ---> Output column
    
-# libraries used in this project
+### libraries used in this project
 
 - numpy
 - pandas
@@ -55,7 +55,7 @@
 - ScikitLearn
 - Filter warning
   
-# Data Insights
+### Data Insights
 
  1. The data contain no null values and also having categorical columns.
 
@@ -78,27 +78,27 @@
 
  7. Rotational speed [rpm], Torque [Nm], Tool wear [min] are highly affecting to our Target column.
 
-# Used Model 
+### Used Model 
 
  - Logistic Regression.
  - KNeighbors Classifier 
  - DecisionTree Classifier
 
-# Model Building
+### Model Building
  - Here we created a function to check which Machine Learning Algorithm will be the best fit for our model and We will select the one with highest accuracy.
    
-# Model Evaluation
+### Model Evaluation
   - classification_report
   - accurary
   - precision
   
-# Train Test score 
+### Train Test score 
   - Hyperparameter Tunning
    
-# Final Model Deployment
+### Final Model Deployment
   - Model with well suitable and with high accuracy
 
-# Model Testing
+### Model Testing
  
   - using sample values
   
@@ -122,13 +122,13 @@
   - Tool wear [min] = 24
   - Target = 0
     
-# Prescriptive Analysis
+### Prescriptive Analysis
    After studying the dataset, we can see that machine failure is mainly occuring because of 3 reasons:
    1. Improper rotational speed of the spindle.
    2. Torque not maintained as per the requirement.
    3. High tool wear.
 
-# Measures to take in order to avoid failure.
+### Measures to take in order to avoid failure.
     1. User must set the rotational speed properly. Not too high and also not too low.
     2. User should not set the torque too high or too low. Torque should be set as per the tool requirement.
     3. User should not use the same tool for long period of time. Since tools may wear due to excessive usage.

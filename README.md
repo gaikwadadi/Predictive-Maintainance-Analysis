@@ -83,6 +83,7 @@
  - Logistic Regression.
  - KNeighbors Classifier 
  - DecisionTree Classifier
+ - RandomForest Classifier
 
 ### Model Building
  - Here we created a function to check which Machine Learning Algorithm will be the best fit for our model and We will select the one with highest accuracy.

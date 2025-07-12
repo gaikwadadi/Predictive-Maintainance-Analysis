@@ -120,6 +120,11 @@ Failures mainly occur due to:
 
 ---
 
-This project is for educational and research purposes only.
+This project is for educational and research purposes only and part of my portfolio, showcasing the machine learning skills essential for data science roles. If you have any questions, feedback, or would like to collaborate, feel free to get in touch!
+
+- **LinkedIn**: [Connect with me professionally](https://www.linkedin.com/in/adii8/)
+
+**Thank you, I look forward to connecting with you!**
+
 
 ---

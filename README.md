@@ -1,138 +1,125 @@
-## Title - Predictive Maintainance Analysis
+# Predictive Maintenance Analysis
 
-### Discription of Project
+This project focuses on predicting machine failures in a mechanical industry using machine learning models.  
+It analyzes operational data from a drilling tool used on a lathe machine to identify patterns leading to failure and helps prevent unexpected breakdowns.
 
-- This project is related to a mechanical industry, Sometimes in industries unexpected machine failures occurs due to    improper handling, power cutoff, faulty     instrument, improper machine parameters given by operator. 
-- By analysing and finding insights from the Dataset of drilling tool which is used on lathe machine in mechanical 
-  industry we created a model using a machine learning algorithm which predict if machine will get failure or not.
+---
 
-### Future scope This Project 
+## 📋 Project Overview
 
-- By using this model we can improve the productivity of companies.
-- We can easily predict  machine will fail or not before start the production by providing input parameters.
-- Prevent the machine from failures.
-- Improves the safety features from accidents.  
-- Language used (PYTHON, EXCEL)
+In mechanical industries, machines sometimes fail unexpectedly due to improper handling, power outages, faulty instruments, incorrect machine parameters, etc.  
+By analyzing a dataset of a **drilling tool**, we built a machine learning model to predict if the machine will fail before starting production.
 
-### Data Information
-- After looking at the dataset, we can assume that the data is about the drilling tool used in a lathe machine.
+---
 
-- The columns consist values of:
-     1. Air temperature in Kelvin (K)
-     2. Process temperature in Kelvin (K)
-     3. Rotational speed in Rotation per minute (RPM)
-     4. Torque in Newton meters (Nm)
-     5. Tool wear in minutes (min)
+## 🚀 Future Scope
 
- - Type column is given to represent the type of product with respect to its quality. 
-   L, M and H are for Low, Medium and High quality products respectively.
+- Improves productivity by reducing downtime.
+- Predicts failures beforehand by providing input parameters.
+- Prevents machine failures and improves safety.
+- Reduces accidents in the workplace.
 
- - ProductID consisting of a letter L, M, or H for low (50% of all products), medium (30%), and high (20%) as product quality variants and a variant-specific 
-   serial number.
+---
 
- - The target column is the output of machine, if it is failing or not.
-   0 represents no failure whereas 1 represents that failure has occured.
+## 📂 Data Information
 
- - An additional column of Failure Type is given so that we can understand what type of failure is occuring.
-   
-### Input Columns and Output column
+- Dataset represents the drilling tool used in a lathe machine.
+- Input Features:
+  1. Air temperature [K]
+  2. Process temperature [K]
+  3. Rotational speed [RPM]
+  4. Torque [Nm]
+  5. Tool wear [min]
+  6. Type (L, M, H — product quality)
+  7. Failure Type
+- Output:
+  - Target: `0` = No Failure, `1` = Failure
+  - Failure Types:
+    - Heat Dissipation Failure
+    - Power Failure
+    - Overstrain Failure
+    - Tool Wear Failure
+    - Random Failures
 
-1. Air temperature in Kelvin (K)
-2. Process temperature in Kelvin (K)
-3. Rotational speed in Rotation per minute (RPM)
-4. Torque in Newton meters (Nm)
-5. Tool wear in minutes (min)
-6. Type
-7. Failure Type
-8. Target ---> Output column
-   
-### libraries used in this project
+---
 
-- numpy
-- pandas
-- matplotlib
-- seaboran
-- ScikitLearn
-- Filter warning
-  
-### Data Insights
+## 🔎 Data Insights
 
- 1. The data contain no null values and also having categorical columns.
+- Data has no null values and contains categorical features.
+- Data is normally distributed.
+- Imbalance exists between failure and no-failure classes.
+- Most failures occur due to:
+  - Heat Dissipation
+  - Power Failure
+  - Overstrain
+  - Tool Wear
+- Low quality products make up ~60%, Medium ~30%, High ~10%.
+- Rotational speed, torque, and tool wear strongly influence failures.
 
- 2. The data is normally distributed because the value of mean and median(50%) is close to each other
-    so there is no need to skewness removal.
+---
 
- 3. The the ratio of machine failure is less than as compare to no failure and so there is imbalance in two columns. 
+## 🧪 Models Used
 
- 4. Type of Failure -
-    
-    - Heat Dissipation Failure : The failure that occurs due to overheating of the tool.
-    - Power Failure : The failure occuring due to power cutout.
-    - Overstrain Failure : Failure because of excessive strain on the tool.
-    - Tool Wear Failure : Failure due to tool wear and tear that happens after excessive use of tool.
-    - Random Failures : Random Failures can be any failure whose cause can't be assessed or any human error.
-    
- 5. Most of time the machine get failed due to Heat Dissipation Failure and after that Power Failure then Overstrain Failure and last Tool Wear Failure.
+- Logistic Regression
+- K-Nearest Neighbors
+- Decision Tree
+- Random Forest
 
- 6. From our total products 60% are low quality products and 30% are medium quality products then 10% are high quality products.
+We built a function to test multiple models and selected the one with the highest accuracy.
 
- 7. Rotational speed [rpm], Torque [Nm], Tool wear [min] are highly affecting to our Target column.
+---
 
-### Used Model 
+## 📈 Model Evaluation
 
- - Logistic Regression.
- - KNeighbors Classifier 
- - DecisionTree Classifier
- - RandomForest Classifier
+- Metrics:
+  - Accuracy
+  - Precision
+  - Classification Report
+  - Confusion Matrix
+- Hyperparameter tuning performed.
+- Final model tested on sample values.
 
-### Model Building
- - Here we created a function to check which Machine Learning Algorithm will be the best fit for our model and We will select the one with highest accuracy.
-   
-### Model Evaluation
-  - classification_report
-  - accurary
-  - precision
-  
-### Train Test score 
-  - Hyperparameter Tunning
-   
-### Final Model Deployment
-  - Model with well suitable and with high accuracy
+---
 
-### Model Testing
- 
-  - using sample values
-  
-  1. Example:-
-  
-  - Type = M
-  - Air temperature [K] = 298.2
-  - Process temperature [K] = 308.5
-  - Rotational speed [rpm] = 2678
-  - Torque [Nm] = 10.7
-  - Tool wear [min] = 86
-  - Target = 1
+## 🖥️ Languages & Libraries
 
-  2. Example:-
+- **Languages:** Python, Excel
+- **Libraries:**
+  - numpy
+  - pandas
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - warnings filter
 
-  - Type = H
-  - Air temperature [K] = 298.4
-  - Process temperature [K] = 308.9
-  - Rotational speed [rpm] = 1782
-  - Torque [Nm] = 23.9
-  - Tool wear [min] = 24
-  - Target = 0
-    
-### Prescriptive Analysis
-   After studying the dataset, we can see that machine failure is mainly occuring because of 3 reasons:
-   1. Improper rotational speed of the spindle.
-   2. Torque not maintained as per the requirement.
-   3. High tool wear.
+---
 
-### Measures to take in order to avoid failure.
-    1. User must set the rotational speed properly. Not too high and also not too low.
-    2. User should not set the torque too high or too low. Torque should be set as per the tool requirement.
-    3. User should not use the same tool for long period of time. Since tools may wear due to excessive usage.
-    4. High quality and medium quality products should be used more frequently.
-    5. Overheating of tool must be avoided by constantly providing coolant to the tool. 
-    6. Secondary power input shoould be provided in case of power failure
+## 🧪 Example Test Cases
+
+| Type | Air Temp [K] | Process Temp [K] | RPM  | Torque [Nm] | Tool wear [min] | Target |
+|------|--------------|------------------|------|-------------|-----------------|--------|
+| M    | 298.2        | 308.5            | 2678 | 10.7        | 86              | 1      |
+| H    | 298.4        | 308.9            | 1782 | 23.9        | 24              | 0      |
+
+---
+
+## 📋 Prescriptive Analysis
+
+Failures mainly occur due to:
+1. Improper rotational speed.
+2. Incorrect torque.
+3. Excessive tool wear.
+
+### Measures to Prevent Failures:
+- Set rotational speed properly.
+- Adjust torque to recommended values.
+- Replace tools before excessive wear.
+- Use medium or high-quality products.
+- Provide coolant to avoid overheating.
+- Install backup power supply.
+
+---
+
+This project is for educational and research purposes only.
+
+---
